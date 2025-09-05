@@ -1,11 +1,12 @@
 package stacks_Lab_Exercise_1;
 
-public class Stack {
+public class CharStack {
+	
 	private char[] charArray;
 	private int top;
 	private int maxSize;
 	
-	public Stack(int size) {
+	public CharStack(int size) {
 		this.charArray = new char[size];
 		this.top = -1;
 		this.maxSize = size;
@@ -21,7 +22,7 @@ public class Stack {
 	
 	public char pop() {
 		if(isEmpty()) {
-			System.out.println("The stack is empty. Nothing to pop");
+			System.out.println("Stack is empty");
 			return '\0';
 		}
 		return charArray[top--];
@@ -29,7 +30,7 @@ public class Stack {
 	
 	public char peek() {
 		if(isEmpty()) {
-			System.out.println("Stack is empty");
+			System.out.println("Stack is Empty");
 			return '\0';
 		}
 		return charArray[top];
@@ -43,8 +44,7 @@ public class Stack {
 		return top == maxSize - 1;
 	}
 	
-	public int size() {
+	public int size () {
 		return top + 1;
 	}
-	
 }
