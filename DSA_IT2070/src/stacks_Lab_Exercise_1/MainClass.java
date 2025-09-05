@@ -12,5 +12,11 @@ public class MainClass {
 		stack.push('D');
 		stack.push('E');
 		
+		System.out.println("Removing item from stack");
+		while(!stack.isFull()) {
+			System.out.println(stack.pop);
+		}
+		
+		
 	}
 }
