@@ -4,7 +4,7 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		
-		CharStack stack = new CharStack(5);
+		Stack stack = new Stack(5);
 		
 		stack.push('A');
 		stack.push('B');
@@ -14,9 +14,12 @@ public class MainClass {
 		
 		System.out.println("Removing item from stack");
 		while(!stack.isFull()) {
-			System.out.println(stack.pop);
+			System.out.println(stack.pop());
 		}
 		
-		
+		System.out.println("\nObservation:");
+        System.out.println("Elements inserted in order: A, B, C, D, E");
+        System.out.println("Elements removed in order: E, D, C, B, A");
+        System.out.println("=> This shows that Stack follows LIFO (Last In First Out).");
 	}
 }
