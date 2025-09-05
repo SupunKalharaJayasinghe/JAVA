@@ -13,7 +13,7 @@ public class MainClass {
 		stack.push('E');
 		
 		System.out.println("Removing item from stack");
-		while(!stack.isFull()) {
+		while(!stack.isEmpty()) {
 			System.out.println(stack.pop());
 		}
 		
