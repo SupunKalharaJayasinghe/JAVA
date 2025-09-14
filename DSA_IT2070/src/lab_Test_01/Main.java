@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Stack stack1 = new Stack(5);
 		Queue queue1 = new Queue(10);
 		
